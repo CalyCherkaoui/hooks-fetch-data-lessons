@@ -9,12 +9,15 @@ function DataFetching() {
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/posts')
     .then(
-      result => {console.log(res)}
+      result => {
+        console.log(result)
+        setPosts(result.data)
+      }
     )
     .catch(
       error => {console.log(error)}
     )
-  })
+  }, []) // we want the data to be feched once
   return (
     <div>
       <ul>
