@@ -21,7 +21,7 @@ function DataFechWithClickButton() {
     .catch(
       error => {console.log(error)}
     )
-  }, [idFromButtonClick]) // we want the data to be feched once
+  }, [idFromButtonClick]) // we want the data to be feched once we click the button
   return (
     <div>
       <h1><em>Fetch data with axios and with input id</em></h1>

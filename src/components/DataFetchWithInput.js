@@ -16,7 +16,7 @@ function DataFetchWithInput() {
     .catch(
       error => {console.log(error)}
     )
-  }, [id]) // we want the data to be feched once
+  }, [id]) // we want the data to be feched once we change the input
   return (
     <div>
       <hr></hr>
