@@ -20,6 +20,11 @@ function DataFetching() {
   }, []) // we want the data to be feched once
   return (
     <div>
+      <hr></hr>
+      <hr></hr>
+      <h1><em>Fetch data with axios</em></h1>
+      <br></br>
+      <br></br>
       <ul>
         {
           posts.map(post => (<li key={post.id}>{post.title}</li>))
